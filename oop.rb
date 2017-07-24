@@ -41,6 +41,8 @@ class Lion < Animal
     super(name)
     if @name == 'Simba'
       @king = true
+    else
+      @king = false
     end
   end
 end
