@@ -3,11 +3,12 @@
 # When called the method should print to the terminal:
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 # Type your solution directly below this line:
+#
+# require "pry"
 
-
-
-
-
+def offer_rose(person)
+  print "Would you take this rose #{person}, in exchange for giving an old beggar woman shelter from the bitter cold?"
+end
 
 # Question 2
 # Assume the following hash...
@@ -26,9 +27,8 @@ town = {
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
 
-
-
-
+town[:residents].delete_at(1)
+town[:castle][:guests] << "Belle"
 
 
 
@@ -43,3 +43,14 @@ friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 # "Belle is friends with Lumière"
 # "Belle is friends with Mrs. Potts"
 # Type your solution directly below this line:
+
+loop do
+print "Belle is friends with #{friends[0]}"
+print "Belle is friends with #{friends[1]}"
+print "Belle is friends with #{friends[2]}"
+print "Belle is friends with #{friends[3]}"
+print "Belle is friends with #{friends[4]}"
+break
+end
+
+# binding.pry
