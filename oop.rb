@@ -4,8 +4,13 @@
 # - A `greet` instance method
 # - The ability to "get" and "set" `name`
 # Type your solution directly below this line:
+# require "pry"
 
 class Animal
+  attr_accessor :name
+  def initialize(name)
+     @name = name
+  end
   def set_name(name)
     @name = name
   end
@@ -33,6 +38,7 @@ pumba = Animal.new("Pumba")
 
 class Lion < Animal
   def initialize(name)
+    super(name)
     if @name == 'Simba'
       @king = true
     end
@@ -44,3 +50,6 @@ end
 # Type your solution directly below this line:
 
 simba = Lion.new("Simba")
+
+# binding.pry
+# puts "end of file"
